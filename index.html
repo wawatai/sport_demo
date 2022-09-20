@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./js/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./js/slick-1.8.1/slick/slick-theme.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./js/js.jsx"></script>
     <!-- <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon"> -->
   </head>
@@ -66,14 +66,14 @@
     <main>
       <div class="ad">
         <div class="cardBox football">
-          <ul class="mutltiple-itme">
+          <ul class="mutltiple-itme sportcard">
             <button class="prev">
               <i class="arrowIc"></i>
             </button>
             <li class="sportType plzLogIn">
               <div class="betBlock">
                 <p class="type">足球</p>
-                <div class="counter" data-target="95">95</div>
+                <div class="counter" data-target="95"></div>
                 <p class="announce">-可投注項-</p>
               </div>
               <div class="sportCard">
@@ -91,7 +91,7 @@
             <li class="sportType  plzLogIn">
               <div class="betBlock">
                 <p class="type">籃球</p>
-                <div class="counter" data-target="54">54</div>
+                <div class="counter" data-target="54"></div>
                 <p class="announce">-可投注項-</p>
               </div>
               <div class="sportCard basketball">
@@ -109,7 +109,7 @@
             <li class="sportType plzLogIn">
               <div class="betBlock">
                 <p class="type">電競</p>
-                <div class="counter" data-target="6">6</div>
+                <div class="counter" data-target="6"></div>
                 <p class="announce">-可投注項-</p>
               </div>
               <div class="sportCard gaming">
@@ -127,7 +127,7 @@
             <li class="sportType plzLogIn">
               <div class="betBlock">
                 <p class="type">網球</p>
-                <div class="counter" data-target="34">34</div>
+                <div class="counter" data-target="34"></div>
                 <p class="announce">-可投注項-</p>
               </div>
               <div class="sportCard tennis">
@@ -145,7 +145,7 @@
             <li class="sportType plzLogIn">
               <div class="betBlock">
                 <p class="type">斯諾克</p>
-                <div class="counter"  data-target="9">9</div>
+                <div class="counter"  data-target="9"></div>
                 <p class="announce">-可投注項-</p>
               </div>
               <div class="sportCard snooker">
@@ -424,7 +424,7 @@
     <div class="filter">
       <!-- 請先註冊 -->
       <div class="jumpWindow unLogIn">
-        <button class="closeBtn closeWindow">✕</button>
+        <button class="closeBtn close">✕</button>
         <div class="content">
           <div class="top">
             <i class="unloginIc"></i>
@@ -433,7 +433,7 @@
           <div class="bottom">
             <span>沒有帳號？</span>
             <button class="signUp">立即註冊</button>
-            <button class="logIn closeWindow">前往登入</button>
+            <button class="logIn close">前往登入</button>
           </div>
         </div>
       </div>
@@ -441,7 +441,7 @@
       <div class="jumpWindow signUP">
         <div class="title">
           會員註冊
-          <button class="closeWindow">✕</button>
+          <button class="close">✕</button>
         </div>
         <div class="content">
           <form>
@@ -498,7 +498,7 @@
       </div>
       <!-- 註冊成功 -->
       <div class="jumpWindow apply_success">
-        <button class="closeBtn closeWindow">✕</button>
+        <button class="closeBtn close">✕</button>
         <i class="success_Ic"></i>
         <p>恭喜您註冊成功！</p>
         <button class="goDeposit" onclick="window.location='./html/index_innerPage.html'">去存款</button>

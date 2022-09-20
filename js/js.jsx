@@ -1,21 +1,40 @@
 //可投注項
-const counters = document.querySelectorAll('.counter');
+$(function(){
+    const counters = document.querySelectorAll('.counter');
 
-counters.forEach((counter) => {
-    counter.innerText = '0';
+    counters.forEach((counter) => {
+        counter.innerText = '0';
+
+        const updateCounter = () => {
+            const target = +counter.getAttribute
+            ('data-target');
+            const c = +counter.innerText;
+
+            const increment = target / 1000000 ;
+
+            if (c < target){
+                counter.innerText= `${Math.ceil(c + increment)}`;
+                setTimeout(updateCounter, 1);
+            }
+        };
+        updateCounter();
+    });
+
 })
+
 
 //filter open + close
 $(function(){
-    $('.jumpWindow .closeWindow').click(function(){
+    $('.jumpWindow .close').click(function(){
         $('.filter')
         .removeClass('display');
     })
+ 
     //請先登入
     $(".plzLogIn").on("click",function(){
         $(".jumpWindow")
         .removeClass('display');
-        $('.filter,.unLogIn')
+        $('.filter,.jumpWindow.unLogIn')
         .addClass('display');
     })
 
@@ -27,7 +46,7 @@ $(function(){
 
     //註冊
     $(".signUp").on("click",function(){
-        $(".jumpWindow.signUP")
+        $('.jumpWindow')
         .removeClass("display");
         $(".filter,.signUP")
         .addClass("display");
@@ -40,8 +59,8 @@ $(function(){
     })
 
     //公告
-    $('.jumpWindow.notice .showmore').click(function(){
-        $('.jumpWindow.showMore').addClass('display');
-        $('.jumpWindow.notice').removeClass('display');
+    $('.filter .notice .showall').click(function(){
+        $('.showMore').addClass('display');
+        $('.notice').removeClass('display');
     })
 })

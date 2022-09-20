@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="./js/js.jsx"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/js.jsx"></script>
     <!-- <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon"> -->
   </head>
   <body>
@@ -78,7 +78,7 @@
     </header>
     <main>
       <div class="ad">
-        <div class="cardBox football">
+        <div class="cardBox">
           <ul class="mutltiple-itme">
             <button class="prev">
               <i class="arrowIc"></i>
@@ -86,7 +86,7 @@
             <li class="sportType">
               <div class="betBlock">
                 <p class="type">足球</p>
-                <p class="counter">95</p>
+                <div class="counter" data-target="95"></div>
                 <p class="announce">-可投注項-</p>
               </div>
               <div class="sportCard">
@@ -104,7 +104,7 @@
             <li class="sportType">
               <div class="betBlock">
                 <p class="type">籃球</p>
-                <p class="counter">54</p>
+                <div class="counter" data-target="54"></div>
                 <p class="announce">-可投注項-</p>
               </div>
               <div class="sportCard basketball">
@@ -122,7 +122,7 @@
             <li class="sportType">
               <div class="betBlock">
                 <p class="type">電競</p>
-                <p class="counter">6</p>
+                <div class="counter" data-target="6"></div>
                 <p class="announce">-可投注項-</p>
               </div>
               <div class="sportCard gaming">
@@ -140,7 +140,7 @@
             <li class="sportType">
               <div class="betBlock">
                 <p class="type">網球</p>
-                <p class="counter">34</p>
+                <div class="counter" data-target="34"></div>
                 <p class="announce">-可投注項-</p>
               </div>
               <div class="sportCard tennis">
@@ -173,6 +173,24 @@
               </div>
               <div class="shadow"></div>
             </li>
+            <!-- <li class="sportType">
+              <div class="betBlock">
+                <p class="type">足球</p>
+                <p class="counter">95</p>
+                <p class="announce">-可投注項-</p>
+              </div>
+              <div class="sportCard">
+                <i class="athlete"></i>
+                <div class="gameInfo">
+                  <div class="textLine">
+                    <span>2020-02-06&nbsp;|&nbsp;03:45</span>
+                    <span>义大利甲组联赛</span>
+                  </div>
+                  <p class="competition">拉素[主] VS 维罗纳</p>
+                </div>
+              </div>
+              <div class="shadow"></div>
+            </li> -->
             <button class="next">
               <i class="arrowIc right"></i>
             </button>
@@ -220,8 +238,19 @@
                 <div class="gameBlock big">
                   <!-- 儀錶板 -->
                   <div class="dashBoard">
-                    <p class="total">總成交量</p>
-                    <p class="num">8953K</p>
+                    <div class="circle03">
+                      <div class="circle02">
+                        <svg>
+                          <circle cx="30" cy="60" r="55"></circle>
+                        </svg>
+                        <div class="circle01">
+                          <div class="textBox">
+                            <p class="total">總成交量</p>
+                            <p class="num">8953<span>K</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <!-- 賽事細項 -->
                   <div class="gameDetail">
@@ -249,8 +278,19 @@
                 <div class="gameBlock">
                   <!-- 儀錶板 -->
                   <div class="dashBoard">
-                    <p class="total">總成交量</p>
-                    <p class="num">8953<span>K</span></p>
+                    <div class="circle03">
+                      <div class="circle02">
+                        <svg>
+                          <circle cx="50" cy="90" r="34"></circle>
+                        </svg>
+                        <div class="circle01">
+                          <div class="textBox">
+                            <p class="total">總成交量</p>
+                            <p class="num">8953<span>K</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <!-- 賽事細項 -->
                   <div class="gameDetail">
@@ -275,8 +315,19 @@
                 <div class="gameBlock">
                   <!-- 儀錶板 -->
                   <div class="dashBoard">
-                    <p class="total">總成交量</p>
-                    <p class="num">8953<span>K</span></p>
+                    <div class="circle03">
+                      <div class="circle02">
+                        <svg>
+                          <circle cx="50" cy="90" r="34"></circle>
+                        </svg>
+                        <div class="circle01">
+                          <div class="textBox">
+                            <p class="total">總成交量</p>
+                            <p class="num">8953<span>K</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <!-- 賽事細項 -->
                   <div class="gameDetail">
@@ -301,8 +352,19 @@
                 <div class="gameBlock">
                   <!-- 儀錶板 -->
                   <div class="dashBoard">
-                    <p class="total">總成交量</p>
-                    <p class="num">8953<span>K</span></p>
+                    <div class="circle03">
+                      <div class="circle02">
+                        <svg>
+                          <circle cx="50" cy="90" r="34"></circle>
+                        </svg>
+                        <div class="circle01">
+                          <div class="textBox">
+                            <p class="total">總成交量</p>
+                            <p class="num">8953<span>K</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <!-- 賽事細項 -->
                   <div class="gameDetail">
@@ -327,8 +389,19 @@
                 <div class="gameBlock">
                   <!-- 儀錶板 -->
                   <div class="dashBoard">
-                    <p class="total">總成交量</p>
-                    <p class="num">8953<span>K</span></p>
+                      <div class="circle03">
+                        <div class="circle02">
+                          <svg>
+                            <circle cx="50" cy="90" r="34"></circle>
+                          </svg>
+                          <div class="circle01">
+                            <div class="textBox">
+                              <p class="total">總成交量</p>
+                              <p class="num">8953<span>K</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                   <!-- 賽事細項 -->
                   <div class="gameDetail">
@@ -391,14 +464,14 @@
       <div class="jumpWindow notice display">
         <div class="title">
           <p>公告標題</p>
-          <button class="closeWindow">✕</button>
+          <button class="close">✕</button>
         </div>
         <div class="content">
           <div class="top">
             <p>公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容</p>
           </div>
           <div class="bottom">
-            <button class="showmore">查看全部</button>
+            <button class="showall">查看全部</button>
           </div>
         </div>
       </div>
@@ -407,7 +480,7 @@
         <div class="title">
           <i class="back"></i>
           通知詳情
-          <button class="closeWindow">✕</button>
+          <button class="close">✕</button>
         </div>
         <div class="topicArea">
           <p class="mainTitle">通知標題</p>

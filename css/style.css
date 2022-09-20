@@ -542,7 +542,7 @@ html body .ad .cardBox {
   padding: 40px 0 0;
   margin: 0 auto;
 }
-html body .ad .cardBox ul {
+html body .ad .cardBox .mutltiple-itme {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -555,7 +555,7 @@ html body .ad .cardBox ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body .ad .cardBox ul button {
+html body .ad .cardBox .mutltiple-itme button {
   width: 50px;
   height: 50px;
   background: rgba(255, 255, 255, 0.7176470588);
@@ -571,17 +571,17 @@ html body .ad .cardBox ul button {
       -ms-flex-align: center;
           align-items: center;
 }
-html body .ad .cardBox ul button.prev {
+html body .ad .cardBox .mutltiple-itme button.prev {
   margin-right: 10px;
 }
-html body .ad .cardBox ul button .arrowIc {
+html body .ad .cardBox .mutltiple-itme button .arrowIc {
   width: 16px;
   height: 25px;
 }
-html body .ad .cardBox ul button .arrowIc.right {
+html body .ad .cardBox .mutltiple-itme button .arrowIc.right {
   background-position-x: 100%;
 }
-html body .ad .cardBox ul li {
+html body .ad .cardBox .mutltiple-itme li {
   width: 231px;
   height: 321px;
   display: -webkit-box;
@@ -597,7 +597,7 @@ html body .ad .cardBox ul li {
   margin: 0 10px 0 0;
   position: relative;
 }
-html body .ad .cardBox ul li .betBlock {
+html body .ad .cardBox .mutltiple-itme li .betBlock {
   width: 96px;
   height: 101px;
   color: #ffffff;
@@ -614,28 +614,28 @@ html body .ad .cardBox ul li .betBlock {
   top: -1px;
   right: -6px;
 }
-html body .ad .cardBox ul li .betBlock .type {
+html body .ad .cardBox .mutltiple-itme li .betBlock .type {
   font-size: 24px;
   font-weight: bold;
   margin: 0 0 10px;
 }
-html body .ad .cardBox ul li .betBlock .counter {
+html body .ad .cardBox .mutltiple-itme li .betBlock .counter {
   font-size: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0 0 10px;
 }
-html body .ad .cardBox ul li .betBlock .announce {
+html body .ad .cardBox .mutltiple-itme li .betBlock .announce {
   color: #fff799;
   font-size: 12px;
 }
-html body .ad .cardBox ul li .sportCard {
+html body .ad .cardBox .mutltiple-itme li .sportCard {
   width: 100%;
   height: 161px;
   border: 1px solid #ffffff;
   border-radius: 10px;
   position: relative;
 }
-html body .ad .cardBox ul li .sportCard .athlete {
+html body .ad .cardBox .mutltiple-itme li .sportCard .athlete {
   width: 229px;
   height: 231px;
   border-radius: inherit;
@@ -643,7 +643,7 @@ html body .ad .cardBox ul li .sportCard .athlete {
   bottom: 0;
   left: 0;
 }
-html body .ad .cardBox ul li .sportCard .gameInfo {
+html body .ad .cardBox .mutltiple-itme li .sportCard .gameInfo {
   width: 100%;
   height: 60px;
   background: rgba(0, 0, 0, 0.7058823529);
@@ -655,7 +655,7 @@ html body .ad .cardBox ul li .sportCard .gameInfo {
   left: 0;
   z-index: 2;
 }
-html body .ad .cardBox ul li .sportCard .gameInfo .textLine {
+html body .ad .cardBox .mutltiple-itme li .sportCard .gameInfo .textLine {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -666,46 +666,46 @@ html body .ad .cardBox ul li .sportCard .gameInfo .textLine {
           justify-content: space-between;
   margin: 0 0 10px;
 }
-html body .ad .cardBox ul li .sportCard .gameInfo .textLine span {
+html body .ad .cardBox .mutltiple-itme li .sportCard .gameInfo .textLine span {
   font-size: 13px;
 }
-html body .ad .cardBox ul li .sportCard.football {
+html body .ad .cardBox .mutltiple-itme li .sportCard.football {
   background-position-x: 0%;
 }
-html body .ad .cardBox ul li .sportCard.football .athlete {
+html body .ad .cardBox .mutltiple-itme li .sportCard.football .athlete {
   background-position-x: 0%;
 }
-html body .ad .cardBox ul li .sportCard.basketball {
+html body .ad .cardBox .mutltiple-itme li .sportCard.basketball {
   background-position-x: 25%;
 }
-html body .ad .cardBox ul li .sportCard.basketball .athlete {
+html body .ad .cardBox .mutltiple-itme li .sportCard.basketball .athlete {
   background-position-x: 25%;
 }
-html body .ad .cardBox ul li .sportCard.gaming {
+html body .ad .cardBox .mutltiple-itme li .sportCard.gaming {
   background-position-x: 50.2%;
 }
-html body .ad .cardBox ul li .sportCard.gaming .athlete {
+html body .ad .cardBox .mutltiple-itme li .sportCard.gaming .athlete {
   background-position-x: 50.5%;
 }
-html body .ad .cardBox ul li .sportCard.tennis {
+html body .ad .cardBox .mutltiple-itme li .sportCard.tennis {
   background-position-x: 75.2%;
 }
-html body .ad .cardBox ul li .sportCard.tennis .athlete {
+html body .ad .cardBox .mutltiple-itme li .sportCard.tennis .athlete {
   background-position-x: 75%;
 }
-html body .ad .cardBox ul li .sportCard.snooker {
+html body .ad .cardBox .mutltiple-itme li .sportCard.snooker {
   background-position-x: 100%;
 }
-html body .ad .cardBox ul li .sportCard.snooker .athlete {
+html body .ad .cardBox .mutltiple-itme li .sportCard.snooker .athlete {
   background-position-x: 100.5%;
 }
-html body .ad .cardBox ul li .shadow {
+html body .ad .cardBox .mutltiple-itme li .shadow {
   width: 244px;
   height: 42px;
   -webkit-box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
-html body .ad .cardBox ul li .shadow.mid {
+html body .ad .cardBox .mutltiple-itme li .shadow.mid {
   width: 100%;
   height: auto;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
