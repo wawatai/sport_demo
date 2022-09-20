@@ -19,6 +19,31 @@ header .logInArea .logInLine {
   background-size: 500%;
 }
 
+.ad .shadow.sh1 {
+  background: url(../img/shadow01.png) no-repeat center;
+  background-size: contain;
+}
+
+.ad .shadow.sh2 {
+  background: url(../img/shadow02.png) no-repeat center;
+  background-size: contain;
+}
+
+.ad .shadow.sh3 {
+  background: url(../img/shadow03.png) no-repeat center;
+  background-size: contain;
+}
+
+.ad .shadow.sh4 {
+  background: url(../img/shadow04.png) no-repeat center;
+  background-size: contain;
+}
+
+.ad .shadow.sh5 {
+  background: url(../img/shadow05.png) no-repeat center;
+  background-size: contain;
+}
+
 .marquee .mqIcon {
   background: url(../img/marquee_icon.png) no-repeat center;
   background-size: 100%;
@@ -36,6 +61,26 @@ header .logInArea .logInLine {
 
 .mainWrap .bottom .deco {
   background: url(../img/deco.png) no-repeat center;
+}
+
+.human .soccerBall {
+  background: url(../img/light_soccer.png) no-repeat;
+  background-size: contain;
+}
+
+.human .group1 {
+  background: url(../img/group1.png) no-repeat;
+  background-size: contain;
+}
+
+.human .group2 {
+  background: url(../img/group2.png) no-repeat;
+  background-size: contain;
+}
+
+.human .group3 {
+  background: url(../img/group3.png) no-repeat;
+  background-size: contain;
 }
 
 .mainWrap .gameBlock.big {
@@ -539,23 +584,16 @@ html body .ad {
 html body .ad .cardBox {
   max-width: 1350px;
   height: auto;
-  padding: 40px 0 0;
-  margin: 0 auto;
-}
-html body .ad .cardBox .mutltiple-itme {
-  width: 100%;
-  height: auto;
+  padding: 85px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
 }
-html body .ad .cardBox .mutltiple-itme button {
+html body .ad .cardBox button {
   width: 50px;
   height: 50px;
   background: rgba(255, 255, 255, 0.7176470588);
@@ -571,15 +609,28 @@ html body .ad .cardBox .mutltiple-itme button {
       -ms-flex-align: center;
           align-items: center;
 }
-html body .ad .cardBox .mutltiple-itme button.prev {
+html body .ad .cardBox button.prev {
   margin-right: 10px;
 }
-html body .ad .cardBox .mutltiple-itme button .arrowIc {
+html body .ad .cardBox button .arrowIc {
   width: 16px;
   height: 25px;
 }
-html body .ad .cardBox .mutltiple-itme button .arrowIc.right {
+html body .ad .cardBox button .arrowIc.right {
   background-position-x: 100%;
+}
+html body .ad .cardBox .mutltiple-itme {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 html body .ad .cardBox .mutltiple-itme li {
   width: 231px;
@@ -622,6 +673,7 @@ html body .ad .cardBox .mutltiple-itme li .betBlock .type {
 html body .ad .cardBox .mutltiple-itme li .betBlock .counter {
   font-size: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7176470588);
   margin: 0 0 10px;
 }
 html body .ad .cardBox .mutltiple-itme li .betBlock .announce {
@@ -667,7 +719,8 @@ html body .ad .cardBox .mutltiple-itme li .sportCard .gameInfo .textLine {
   margin: 0 0 10px;
 }
 html body .ad .cardBox .mutltiple-itme li .sportCard .gameInfo .textLine span {
-  font-size: 13px;
+  white-space: nowrap;
+  font-size: 11px;
 }
 html body .ad .cardBox .mutltiple-itme li .sportCard.football {
   background-position-x: 0%;
@@ -700,18 +753,8 @@ html body .ad .cardBox .mutltiple-itme li .sportCard.snooker .athlete {
   background-position-x: 100.5%;
 }
 html body .ad .cardBox .mutltiple-itme li .shadow {
-  width: 244px;
-  height: 42px;
-  -webkit-box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
-}
-html body .ad .cardBox .mutltiple-itme li .shadow.mid {
-  width: 100%;
-  height: auto;
-  -webkit-clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
-  background: #000000;
-  opacity: 0.5;
+  width: 235px;
+  height: 39px;
 }
 html body .mainWrap {
   width: 100%;
@@ -831,6 +874,7 @@ html body .mainWrap .top .btnArea button:last-child {
 html body .mainWrap .bottom {
   width: 100%;
   height: auto;
+  position: relative;
 }
 html body .mainWrap .bottom .deco {
   width: 100%;
@@ -845,6 +889,185 @@ html body .mainWrap .bottom .deco .hotgame {
   font-size: 24px;
   font-weight: bold;
   margin: auto 0 auto 556px;
+}
+html body .mainWrap .bottom .human {
+  width: 100%;
+  height: 151px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+html body .mainWrap .bottom .human .soccerBall {
+  width: 360px;
+  height: 84px;
+  position: absolute;
+  bottom: 1px;
+  left: 38%;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.2s 4.3s ease-in-out forwards;
+          animation: fadeIn 0.2s 4.3s ease-in-out forwards;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+html body .mainWrap .bottom .human .group1 {
+  width: 61px;
+  height: 81px;
+  position: absolute;
+  bottom: 10px;
+  left: 0%;
+  opacity: 0;
+  -webkit-animation: gp1 1.5s 3s ease-in-out forwards;
+          animation: gp1 1.5s 3s ease-in-out forwards;
+}
+@-webkit-keyframes gp1 {
+  0% {
+    opacity: 1;
+    left: 10%;
+  }
+  10% {
+    opacity: 1;
+    left: 15%;
+  }
+  50% {
+    opacity: 1;
+    left: 30%;
+  }
+  70% {
+    opacity: 1;
+    left: 29%;
+  }
+  90% {
+    opacity: 1;
+    left: 35%;
+  }
+  90% {
+    opacity: 1;
+    left: 34%;
+  }
+  100% {
+    opacity: 1;
+    left: 37%;
+  }
+}
+@keyframes gp1 {
+  0% {
+    opacity: 1;
+    left: 10%;
+  }
+  10% {
+    opacity: 1;
+    left: 15%;
+  }
+  50% {
+    opacity: 1;
+    left: 30%;
+  }
+  70% {
+    opacity: 1;
+    left: 29%;
+  }
+  90% {
+    opacity: 1;
+    left: 35%;
+  }
+  90% {
+    opacity: 1;
+    left: 34%;
+  }
+  100% {
+    opacity: 1;
+    left: 37%;
+  }
+}
+html body .mainWrap .bottom .human .group2 {
+  width: 99px;
+  height: 79px;
+  position: absolute;
+  bottom: 10px;
+  left: 20%;
+  opacity: 0;
+  -webkit-animation: gp2 1s 4s ease-in forwards;
+          animation: gp2 1s 4s ease-in forwards;
+}
+@-webkit-keyframes gp2 {
+  0% {
+    opacity: 1;
+    left: 5%;
+  }
+  10% {
+    opacity: 1;
+    left: 15%;
+  }
+  100% {
+    opacity: 1;
+    left: 20%;
+  }
+}
+@keyframes gp2 {
+  0% {
+    opacity: 1;
+    left: 5%;
+  }
+  10% {
+    opacity: 1;
+    left: 15%;
+  }
+  100% {
+    opacity: 1;
+    left: 20%;
+  }
+}
+html body .mainWrap .bottom .human .group3 {
+  width: 83px;
+  height: 73px;
+  position: absolute;
+  bottom: 10px;
+  right: 20%;
+  opacity: 0;
+  -webkit-animation: gp3 1s 4.5s ease-in forwards;
+          animation: gp3 1s 4.5s ease-in forwards;
+}
+@-webkit-keyframes gp3 {
+  0% {
+    opacity: 1;
+    right: 10%;
+  }
+  10% {
+    opacity: 1;
+    right: 15%;
+  }
+  100% {
+    opacity: 1;
+    right: 20%;
+  }
+}
+@keyframes gp3 {
+  0% {
+    opacity: 1;
+    right: 10%;
+  }
+  10% {
+    opacity: 1;
+    right: 15%;
+  }
+  100% {
+    opacity: 1;
+    right: 20%;
+  }
 }
 html body .mainWrap .bottom .gameWrap {
   width: 100%;
@@ -921,7 +1144,10 @@ html body .mainWrap .bottom .gameWrap .rightArea .gameBlock .dashBoard .circle03
   display: -ms-flexbox;
   display: flex;
   border-radius: 70px;
-  background: lightgray;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dedede), to(#c8c8c8));
+  background: linear-gradient(to top, #dedede 0%, #c8c8c8 100%);
+  -webkit-box-shadow: inset 3px 3px 10px 3px rgba(18, 9, 16, 0.1);
+          box-shadow: inset 3px 3px 10px 3px rgba(18, 9, 16, 0.1);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -953,7 +1179,7 @@ html body .mainWrap .bottom .gameWrap .rightArea .gameBlock .dashBoard .circle03
 }
 html body .mainWrap .bottom .gameWrap .rightArea .gameBlock .dashBoard .circle03 .circle02 svg circle {
   fill: transparent;
-  stroke: red;
+  stroke: #e82244;
   stroke-width: 12px;
   stroke-linecap: round;
   stroke-dasharray: 500;
@@ -986,7 +1212,10 @@ html body .mainWrap .bottom .gameWrap .rightArea .gameBlock .dashBoard .circle03
   width: 58px;
   height: 58px;
   border-radius: 70px;
-  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f0f0f0), color-stop(50%, #ffffff));
+  background: linear-gradient(to top, #f0f0f0 0%, #ffffff 50%);
+  -webkit-box-shadow: 8px 8px 8px 8px rgba(69, 69, 69, 0.1);
+          box-shadow: 8px 8px 8px 8px rgba(69, 69, 69, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1021,7 +1250,7 @@ html body .mainWrap .bottom .gameWrap .gameBlock {
   height: 100%;
 }
 html body .mainWrap .bottom .gameWrap .gameBlock.big {
-  padding: 7%;
+  padding: 5%;
 }
 html body .mainWrap .bottom .gameWrap .gameBlock.big .dashBoard {
   width: 30%;
@@ -1035,7 +1264,10 @@ html body .mainWrap .bottom .gameWrap .gameBlock.big .dashBoard .circle03 {
   display: -ms-flexbox;
   display: flex;
   border-radius: 70px;
-  background: lightgray;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dedede), to(#c8c8c8));
+  background: linear-gradient(to top, #dedede 0%, #c8c8c8 100%);
+  -webkit-box-shadow: inset 3px 3px 10px 3px rgba(18, 9, 16, 0.1);
+          box-shadow: inset 3px 3px 10px 3px rgba(18, 9, 16, 0.1);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1067,7 +1299,7 @@ html body .mainWrap .bottom .gameWrap .gameBlock.big .dashBoard .circle03 .circl
 }
 html body .mainWrap .bottom .gameWrap .gameBlock.big .dashBoard .circle03 .circle02 svg circle {
   fill: transparent;
-  stroke: red;
+  stroke: #e82244;
   stroke-width: 16px;
   stroke-linecap: round;
   stroke-dasharray: 500;
@@ -1095,7 +1327,10 @@ html body .mainWrap .bottom .gameWrap .gameBlock.big .dashBoard .circle03 .circl
   width: 100px;
   height: 100px;
   border-radius: 70px;
-  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f0f0f0), color-stop(50%, #ffffff));
+  background: linear-gradient(to top, #f0f0f0 0%, #ffffff 50%);
+  -webkit-box-shadow: 8px 8px 8px 8px rgba(69, 69, 69, 0.1);
+          box-shadow: 8px 8px 8px 8px rgba(69, 69, 69, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1158,7 +1393,7 @@ html body .mainWrap .bottom .gameWrap .gameBlock.big .detail .main {
   color: #252525;
   font-size: 25px;
   font-weight: bold;
-  margin: 47px 10px 10px;
+  margin: 58px 10px 10px;
   position: relative;
 }
 html body .mainWrap .bottom .gameWrap .gameBlock .dashBoard {
@@ -1166,9 +1401,11 @@ html body .mainWrap .bottom .gameWrap .gameBlock .dashBoard {
   height: 30%;
 }
 html body .mainWrap .bottom .gameWrap .gameBlock .dashBoard .total {
+  color: #7a7a7a;
   font-size: 12px;
 }
 html body .mainWrap .bottom .gameWrap .gameBlock .dashBoard .num {
+  color: #252525;
   font-size: 15px;
   font-weight: bold;
 }

@@ -10,7 +10,7 @@ $(function(){
             ('data-target');
             const c = +counter.innerText;
 
-            const increment = target / 1000000 ;
+            const increment = target / 100000000 ;
 
             if (c < target){
                 counter.innerText= `${Math.ceil(c + increment)}`;
@@ -59,8 +59,21 @@ $(function(){
     })
 
     //公告
-    $('.filter .notice .showall').click(function(){
-        $('.showMore').addClass('display');
-        $('.notice').removeClass('display');
+    $('.jumpWindow.notice .showall').click(function(){
+        $('.jumpWindow.showMore').addClass('display');
+        $('.jumpWindow.notice').removeClass('display');
     })
+})
+
+//ad
+$(function(){
+    $(document).ready(function(){
+        $('.mutltiple-itme').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        centerMode: true,
+        });
+      });
 })

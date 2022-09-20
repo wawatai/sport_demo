@@ -18,6 +18,27 @@ header .logInArea .logInLine {
     background-size: 500%;
 }
 
+.ad .shadow.sh1 {
+    background: url(../img/shadow01.png) no-repeat center;
+    background-size: contain;
+}
+.ad .shadow.sh2 {
+    background: url(../img/shadow02.png) no-repeat center;
+    background-size: contain;
+}
+.ad .shadow.sh3 {
+    background: url(../img/shadow03.png) no-repeat center;
+    background-size: contain;
+}
+.ad .shadow.sh4 {
+    background: url(../img/shadow04.png) no-repeat center;
+    background-size: contain;
+}
+.ad .shadow.sh5 {
+    background: url(../img/shadow05.png) no-repeat center;
+    background-size: contain;
+}
+
 //marquee
 .marquee .mqIcon {
     background: url(../img/marquee_icon.png) no-repeat center;
@@ -35,10 +56,32 @@ header .logInArea .logInLine {
     background-size: 400%;
 }
 
-//bottom
+//deco
 .mainWrap .bottom .deco {
     background: url(../img/deco.png)no-repeat center;
 }
+
+.human .soccerBall {
+    background: url(../img/light_soccer.png) no-repeat;
+    background-size: contain;
+}
+
+.human .group1 {
+    background: url(../img/group1.png) no-repeat;
+    background-size: contain;
+}
+
+.human .group2 {
+    background: url(../img/group2.png) no-repeat;
+    background-size: contain;
+}
+
+.human .group3 {
+    background: url(../img/group3.png) no-repeat;
+    background-size: contain;
+}
+
+//gameBlock
 .mainWrap .gameBlock.big {
     background: url(../img/gameBlockbg.png)no-repeat;
     background: contain;
@@ -48,7 +91,6 @@ header .logInArea .logInLine {
     background: contain;
 }
 
-//gameBlock
 .gameDetail .teamLogo {
     background: url(../img/team.png) no-repeat;
     background-size: 200%;

@@ -6,8 +6,35 @@
     .cardBox {
         max-width: 1350px;
         height: auto;
-        padding: 40px 0 0;
+        padding: 85px 0 0;
+        display: flex;
+        align-items: center;
         margin: 0 auto;
+
+        button {
+            width: 50px;
+            height: 50px;
+            background: $sideBtn_Bg;
+            border-radius: 50px;
+            color: $sideBtn_font;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+
+            &.prev {
+                margin-right: 10px;
+            }
+
+            .arrowIc {
+                width: 16px;
+                height: 25px;
+
+                &.right {
+                    background-position-x: 100%;
+                }
+            }
+        }
 
         .mutltiple-itme {
             width: 100%;
@@ -15,30 +42,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
-            button {
-                width: 50px;
-                height: 50px;
-                background: $sideBtn_Bg;
-                border-radius: 50px;
-                color: $sideBtn_font;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                &.prev {
-                    margin-right: 10px;
-                }
-
-                .arrowIc {
-                    width: 16px;
-                    height: 25px;
-
-                    &.right {
-                        background-position-x: 100%;
-                    }
-                }
-            }
 
             li {
                 width: 231px;
@@ -70,6 +73,7 @@
                     .counter {
                         font-size: 50px;
                         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        text-shadow: 0 0 10px $betBlock_font_textShadow ;
                         margin: 0 0 10px;
                     }
 
@@ -114,7 +118,8 @@
                             margin: 0 0 10px;
                             
                             span {
-                                font-size: 13px;
+                                white-space: nowrap;
+                                font-size: 11px;
                             }
                         }
                     }
@@ -156,20 +161,18 @@
                 }
 
                 .shadow {
-                    width: 244px;
-                    height: 42px;
-                    box-shadow: 2px 2px 2px 3px rgb(0,0,0,20%);
-
-                    &.mid {
-                        width: 100%;
-                        height: auto;
-                        clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
-                        background: #000000;
-                        opacity: 0.5;
-                    }
+                    width: 235px;
+                    height: 39px;
                 }
 
+                // &:hover,&:active,&.active {
+                //     .athlete {
+                       
+                //     }
+                // }
+
             }
+            
         }
     }
 }

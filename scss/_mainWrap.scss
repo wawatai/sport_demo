@@ -101,6 +101,7 @@
   .bottom {
     width: 100%;
     height: auto;
+    position: relative;
 
     //裝飾條
     .deco {
@@ -114,6 +115,124 @@
         font-size: 24px;
         font-weight: bold;
         margin: auto 0 auto 556px;
+      }
+    }
+    .human {
+      width: 100%;
+      height: 151px;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+
+      .soccerBall {
+        width: 360px;
+        height: 84px;
+        position: absolute;
+        bottom: 1px;
+        left: 38%;
+        opacity: 0;
+        animation: fadeIn 0.2s 4.3s ease-in-out forwards;
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+         
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+
+      .group1 {
+        width: 61px;
+        height: 81px;
+        position: absolute;
+        bottom: 10px;
+        left: 0%;
+        opacity: 0;
+        animation: gp1 1.5s 3s ease-in-out forwards;
+
+        @keyframes gp1 {
+          0% {
+            opacity: 1;
+            left: 10%;
+          }
+          10% {
+            opacity: 1;
+            left: 15%;
+          }
+          50% {
+            opacity: 1;
+            left: 30%;
+          }
+          70% {
+            opacity: 1;
+            left: 29%;
+          }
+          90% {
+            opacity: 1;
+            left: 35%;
+          }
+          90% {
+            opacity: 1;
+            left: 34%;
+          }
+          100% {
+            opacity: 1;
+            left: 37%;
+          }
+        }
+      }
+
+      .group2 {
+        width: 99px;
+        height: 79px;
+        position: absolute;
+        bottom: 10px;
+        left: 20%;
+        opacity: 0;
+        animation: gp2 1s 4s ease-in forwards;
+
+        @keyframes gp2 {
+          0% {
+            opacity: 1;
+            left: 5%;
+          }
+          10% {
+            opacity: 1;
+            left: 15%;
+          }
+          100% {
+            opacity: 1;
+            left: 20%;
+          }
+        }
+      }
+
+      .group3 {
+        width: 83px;
+        height: 73px;
+        position: absolute;
+        bottom: 10px;
+        right: 20%;
+        opacity: 0;
+        animation: gp3 1s 4.5s ease-in forwards;
+
+        @keyframes gp3 {
+          0% {
+            opacity: 1;
+            right: 10%;
+          }
+          10% {
+            opacity: 1;
+            right: 15%;
+          }
+        
+          100% {
+            opacity: 1;
+            right: 20%;
+          }
+        }
       }
     }
     .gameWrap {
@@ -166,80 +285,7 @@
             width: 100%;
             height: 100%;
             position: relative;
-
-
-              .circle03 {
-                width: 80px;
-                height: 80px;
-                display: flex;
-                border-radius: 70px;
-                background: lightgray;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                top: 11px;
-                left: 19px;
-
-                .circle02 {
-                  width: 100%;
-                  height: 100%;
-
-                  svg {
-                    width: 162px;
-                    height: 133px;
-                    position: relative;
-                    top: -58px;
-                    left: -64px;
-                    transform: translate(-50%,-50%);
-                    transform: rotate(-90deg);
-    
-                    circle {
-                        fill: transparent;
-                        stroke: red;
-                        stroke-width: 12px;
-                        stroke-linecap: round;
-                        stroke-dasharray: 500;
-                        stroke-dashoffset: 500;
-                        animation: scrun 8s linear;
-                        animation-fill-mode: forwards;
-                        @keyframes scrun {
-                          100% {
-                            stroke-dashoffset: 0; 
-                          }
-                        }
-                    }
-                  }
-              
-                  .circle01 {
-                    width: 80px;
-                    height: 81px; 
-                    background-image:
-                    linear-gradient(219deg, transparent 50%, lightgray 50%),
-                    linear-gradient(90deg, lightgray 50%, transparent 50%);
-                    border-radius: 50px;  
-                    position: absolute; 
-                    top: -1.5px;
-                    left: 0;
-
-
-                    .textBox {
-                      width: 58px;
-                      height: 58px;
-                      border-radius: 70px;
-                      background: white;
-                      display: flex;
-                      flex-direction: column;
-                      justify-content: center;
-                      align-items: center;
-                      position: absolute;
-                      top: 12px;
-                      left: 11px;
-                    }
-                  }
-                }
-              }  
-            
+            @include dashcircle_small;
           }
         }
       }
@@ -250,7 +296,7 @@
         height: 100%;
 
         &.big {
-            padding: 7%;
+            padding: 5%;
             
           // 儀表板
         .dashBoard {
@@ -258,85 +304,7 @@
             height: 120%;
             margin: 0 45px 0 0;
 
-            .circle03 {
-              width: 128px;
-              height: 128px;
-              display: flex;
-              border-radius: 70px;
-              background: lightgray;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              position: absolute;
-              top: 43px;
-              left: 67px;
-
-              .circle02 {
-                width: 100%;
-                height: 100%;
-
-                svg {
-                  width: 128px;
-                  height: 128px;
-                  position: relative;
-                  top: -36px;
-                  left: 5px;
-                  transform: translate(-50%,-50%);
-                  transform: rotate(-90deg);
-  
-                  circle {
-                      fill: transparent;
-                      stroke: red;
-                      stroke-width: 16px;
-                      stroke-linecap: round;
-                      stroke-dasharray: 500;
-                      stroke-dashoffset: 500;
-                      animation: scrun 8s linear;
-                      animation-fill-mode: forwards;
-                      @keyframes scrun {
-                        100% {
-                          stroke-dashoffset: 0; 
-                        }
-                      }
-                  }
-                }
-            
-                .circle01 {
-                  width: 128px;
-                  height: 128px; 
-                  background-image:
-                  linear-gradient(199deg, transparent 50%, lightgray 50%),
-                  linear-gradient(90deg, lightgray 50%, transparent 50%);
-                  border-radius: 70px;  
-                  position: absolute; 
-                  top: -1.5px;
-                  left: 0;
-
-
-                  .textBox {
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 70px;
-                    background: white;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    position: absolute;
-                    top: 14px;
-                    left: 14px;
-
-                    .total {
-                      font-size: 18px;
-                    }
-
-                    .num {
-                      font-size: 25px;
-                    }
-                  }
-                }
-              }
-            }  
+            @include dashcircle_big;
           }
   
           //賽事細項
@@ -383,22 +351,24 @@
               color: $gameBlock_font1;
               font-size: 25px;
               font-weight: bold;
-              margin: 47px 10px 10px;
+              margin: 58px 10px 10px;
               position: relative;
             }
           }
         }
 
-        // 儀表板
+       
         .dashBoard {
           width: 30%;
           height: 30%;
 
           .total {
+            color: $gameBlock_font2;
             font-size: 12px;
           }
 
           .num {
+            color: $gameBlock_font1;
             font-size: 15px;
             font-weight: bold;
           }
@@ -462,7 +432,6 @@
             font-weight: bold;
             margin: 47px 0 10px 0;
           }
-
         }
       }
 
@@ -478,6 +447,7 @@
           font-size: 20px;
           font-weight: bold;
         }
+
         &.info {
           font-size: 12px;
           white-space: nowrap;
