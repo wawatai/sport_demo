@@ -1,0 +1,90 @@
+//header
+header .logInArea .logInLine {
+    background: url(../img/logInLine_icon.png) no-repeat;
+    background-size: 300%;
+}
+
+//ad
+.ad .arrowIc {
+    background: url(../img/adBtn.png)no-repeat;
+    background-size: 200%;
+}
+.ad .sportCard {
+    background: url(../img/cardBG.png) no-repeat;
+    background-size: 500%;
+}
+.ad .athlete {
+    background: url(../img/sidePic.png) no-repeat;
+    background-size: 500%;
+}
+
+//marquee
+.marquee .mqIcon {
+    background: url(../img/marquee_icon.png) no-repeat center;
+    background-size: 100%;
+}
+
+//btnArea
+.btnArea button {
+    background: url(../img/btnBg.png) no-repeat center;
+    background-size: 100%;
+}
+
+.btnArea .icon {
+    background: url(../img/btnIcon.png)no-repeat;
+    background-size: 400%;
+}
+
+//bottom
+.mainWrap .bottom .deco {
+    background: url(../img/deco.png)no-repeat center;
+}
+.mainWrap .gameBlock.big {
+    background: url(../img/gameBlockbg.png)no-repeat;
+    background: contain;
+}
+.mainWrap .gameBlock {
+    background: url(../img/gameBlockbgS.png)no-repeat;
+    background: contain;
+}
+
+//gameBlock
+.gameDetail .teamLogo {
+    background: url(../img/team.png) no-repeat;
+    background-size: 200%;
+}
+
+
+//asideBtn
+aside i {
+    background: url(../img/asideBtn.png)no-repeat center;
+    background-size: 200%;
+}
+
+
+//BG
+main {
+    background: url(../img/bgAll.png) no-repeat center;
+    background-size: cover;
+}
+
+//jumpWindow
+.jumpWindow.unLogIn .unloginIc {
+    background: url(../img/unlogin_icon.png)no-repeat center;
+    background-size: contain;
+}
+
+.jumpWindow.apply_success .success_Ic {
+    background: url(../img/success_ic.png) no-repeat center;
+    background-size: contain;
+}
+
+.jumpWindow.showMore .back {
+    background: url(../img/back_icon.png) no-repeat;
+    background-size: contain;
+}
+
+.jumpWindow.showMore .content {
+    background: url(../img/jpWcontentBG.png) no-repeat;
+    background-size: cover;
+}

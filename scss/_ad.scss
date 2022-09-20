@@ -1,0 +1,175 @@
+.ad {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    .cardBox {
+        max-width: 1350px;
+        height: auto;
+        padding: 40px 0 0;
+        margin: 0 auto;
+
+        ul {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                width: 50px;
+                height: 50px;
+                background: $sideBtn_Bg;
+                border-radius: 50px;
+                color: $sideBtn_font;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &.prev {
+                    margin-right: 10px;
+                }
+
+                .arrowIc {
+                    width: 16px;
+                    height: 25px;
+
+                    &.right {
+                        background-position-x: 100%;
+                    }
+                }
+            }
+
+            li {
+                width: 231px;
+                height: 321px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                margin: 0 10px 0 0;
+                position: relative;
+
+                .betBlock {
+                    width: 96px;
+                    height: 101px;
+                    color: $betBlock_font_Big;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    margin: auto;
+                    position: absolute;
+                    top: -1px;
+                    right: -6px;
+
+                    .type {
+                        font-size: 24px;
+                        font-weight: bold;
+                        margin: 0 0 10px;
+                    }
+
+                    .counter {
+                        font-size: 50px;
+                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        margin: 0 0 10px;
+                    }
+
+                    .announce {
+                        color: $announce_font;
+                        font-size: 12px;
+                    }
+                }
+
+                .sportCard {
+                    width: 100%;
+                    height: 161px;
+                    @include sportCard;
+                    position: relative;
+
+                    .athlete {
+                        width: 229px;
+                        height: 231px;
+                        border-radius: inherit;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+
+                    .gameInfo {
+                        width: 100%;
+                        height: 60px;
+                        background: $sportCardInfoBg;
+                        color: $sportCardInfo_font;
+                        border-radius: 0 0 10px 10px;
+                        padding: 11px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 2;
+
+                        .textLine {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 0 0 10px;
+                            
+                            span {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+
+                    &.football {
+                        background-position-x: 0%;
+                        .athlete {
+                            background-position-x: 0%;
+                        }
+                    }
+
+                    &.basketball {
+                        background-position-x: 25%;
+                        .athlete {
+                            background-position-x: 25%;
+                        }
+                    }
+
+                    &.gaming {
+                        background-position-x: 50.2%;
+                        .athlete {
+                            background-position-x: 50.5%;
+                        }
+                    }
+
+                    &.tennis {
+                        background-position-x: 75.2%;
+                        .athlete {
+                            background-position-x: 75%;
+                        }
+                    }
+
+                    &.snooker {
+                        background-position-x: 100%;
+                        .athlete {
+                            background-position-x: 100.5%;
+                        }
+                    }
+                }
+
+                .shadow {
+                    width: 244px;
+                    height: 42px;
+                    box-shadow: 2px 2px 2px 3px rgb(0,0,0,20%);
+
+                    &.mid {
+                        width: 100%;
+                        height: auto;
+                        clip-path: polygon(14% 0, 86% 0, 100% 100%, 0% 100%);
+                        background: #000000;
+                        opacity: 0.5;
+                    }
+                }
+
+            }
+        }
+    }
+}
