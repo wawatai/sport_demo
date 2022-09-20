@@ -113,7 +113,7 @@ main {
   background-size: contain;
 }
 
-.jumpWindow.apply_success .success_Ic {
+.jumpWindow.applySuccess .success_Ic {
   background: url(../img/success_ic.png) no-repeat center;
   background-size: contain;
 }
@@ -443,7 +443,6 @@ html body header .center .unlogArea label .signupHint {
   position: absolute;
   bottom: -16px;
   right: 36px;
-  cursor: pointer;
 }
 html body header .center .unlogArea .btnBox {
   width: auto;
@@ -1036,37 +1035,69 @@ html body .mainWrap .bottom .human .group3 {
   height: 73px;
   position: absolute;
   bottom: 10px;
-  right: 20%;
+  right: 0;
   opacity: 0;
-  -webkit-animation: gp3 1s 4.5s ease-in forwards;
-          animation: gp3 1s 4.5s ease-in forwards;
+  -webkit-animation: gp3 0.2s 4.5s ease-OUT forwards;
+          animation: gp3 0.2s 4.5s ease-OUT forwards;
 }
 @-webkit-keyframes gp3 {
   0% {
     opacity: 1;
-    right: 10%;
+    right: 5%;
   }
   10% {
     opacity: 1;
     right: 15%;
   }
+  30% {
+    opacity: 1;
+    right: 28%;
+  }
+  40% {
+    opacity: 1;
+    right: 28%;
+  }
+  50% {
+    opacity: 1;
+    right: 26%;
+  }
+  70% {
+    opacity: 1;
+    right: 24%;
+  }
   100% {
     opacity: 1;
-    right: 20%;
+    right: 23%;
   }
 }
 @keyframes gp3 {
   0% {
     opacity: 1;
-    right: 10%;
+    right: 5%;
   }
   10% {
     opacity: 1;
     right: 15%;
   }
+  30% {
+    opacity: 1;
+    right: 28%;
+  }
+  40% {
+    opacity: 1;
+    right: 28%;
+  }
+  50% {
+    opacity: 1;
+    right: 26%;
+  }
+  70% {
+    opacity: 1;
+    right: 24%;
+  }
   100% {
     opacity: 1;
-    right: 20%;
+    right: 23%;
   }
 }
 html body .mainWrap .bottom .gameWrap {
@@ -1831,7 +1862,7 @@ html body .filter .jumpWindow.signUP .content .downArea button {
   background: linear-gradient(to right, #ff3f3f 0%, #e70057 100%);
   margin: auto;
 }
-html body .filter .jumpWindow.apply_success {
+html body .filter .jumpWindow.applySuccess {
   display: none;
   width: 267px;
   height: 167px;
@@ -1850,21 +1881,21 @@ html body .filter .jumpWindow.apply_success {
           align-items: center;
   position: relative;
 }
-html body .filter .jumpWindow.apply_success.display {
+html body .filter .jumpWindow.applySuccess.display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-html body .filter .jumpWindow.apply_success .success_Ic {
+html body .filter .jumpWindow.applySuccess .success_Ic {
   width: 46px;
   height: 47px;
 }
-html body .filter .jumpWindow.apply_success p {
+html body .filter .jumpWindow.applySuccess p {
   font-size: 20px;
   font-weight: bold;
   margin: 11px 0 22px;
 }
-html body .filter .jumpWindow.apply_success .goDeposit {
+html body .filter .jumpWindow.applySuccess .goDeposit {
   width: 185px;
   height: 46px;
   color: #ffffff;

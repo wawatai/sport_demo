@@ -19,7 +19,6 @@ $(function(){
         };
         updateCounter();
     });
-
 })
 
 
@@ -46,22 +45,19 @@ $(function(){
 
     //註冊
     $(".signUp").on("click",function(){
-        $('.jumpWindow')
-        .removeClass("display");
-        $(".filter,.signUP")
-        .addClass("display");
+        $(".filter,.jumpWindow.signUP").addClass("display");
     })
 
     //註冊成功!
     $(".filter .signUP .submit").click(function(){
-        $('.jumpWindow.apply_success').addClass('display');
+        $('.jumpWindow.applySuccess').addClass('display');
         $(".signUP").removeClass('display');
     })
 
     //公告
-    $('.jumpWindow.notice .showall').click(function(){
-        $('.jumpWindow.showMore').addClass('display');
-        $('.jumpWindow.notice').removeClass('display');
+    $('.notice .content .showAll').on("click",function(){
+        $('.showMore').addClass('display');
+        $('.notice').removeClass('display');
     })
 })
 

@@ -214,23 +214,43 @@
         height: 73px;
         position: absolute;
         bottom: 10px;
-        right: 20%;
+        right: 0;
         opacity: 0;
-        animation: gp3 1s 4.5s ease-in forwards;
+        animation: gp3 0.2s 4.5s ease-OUT forwards;
 
         @keyframes gp3 {
           0% {
             opacity: 1;
-            right: 10%;
+            right: 5%;
           }
           10% {
             opacity: 1;
             right: 15%;
           }
-        
+
+          30% {
+            opacity: 1;
+            right: 28%;
+          }
+
+          40% {
+            opacity: 1;
+            right: 28%;
+          }
+
+          50% {
+            opacity: 1;
+            right: 26%;
+          }
+
+          70% {
+            opacity: 1;
+            right: 24%;
+          }
+
           100% {
             opacity: 1;
-            right: 20%;
+            right: 23%;
           }
         }
       }
