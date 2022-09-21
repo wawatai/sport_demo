@@ -5,7 +5,8 @@ header .logInArea .logInLine {
 }
 
 //ad
-.ad .arrowIc {
+.ad .slick-arrow.slick-prev::after,
+.ad .slick-arrow.slick-next::after {
     background: url(../img/adBtn.png)no-repeat;
     background-size: 200%;
 }
@@ -18,24 +19,8 @@ header .logInArea .logInLine {
     background-size: 500%;
 }
 
-.ad .shadow.sh1 {
-    background: url(../img/shadow01.png) no-repeat center;
-    background-size: contain;
-}
-.ad .shadow.sh2 {
-    background: url(../img/shadow02.png) no-repeat center;
-    background-size: contain;
-}
-.ad .shadow.sh3 {
+.ad .shadow {
     background: url(../img/shadow03.png) no-repeat center;
-    background-size: contain;
-}
-.ad .shadow.sh4 {
-    background: url(../img/shadow04.png) no-repeat center;
-    background-size: contain;
-}
-.ad .shadow.sh5 {
-    background: url(../img/shadow05.png) no-repeat center;
     background-size: contain;
 }
 
@@ -79,16 +64,6 @@ header .logInArea .logInLine {
 .human .group3 {
     background: url(../img/group3.png) no-repeat;
     background-size: contain;
-}
-
-//gameBlock
-.mainWrap .gameBlock.big {
-    background: url(../img/gameBlockbg.png)no-repeat;
-    background: contain;
-}
-.mainWrap .gameBlock {
-    background: url(../img/gameBlockbgS.png)no-repeat;
-    background: contain;
 }
 
 .gameDetail .teamLogo {

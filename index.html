@@ -2,7 +2,7 @@
 <html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.25" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./js/slick-1.8.1/slick/slick.css" />
@@ -66,11 +66,8 @@
     <main>
       <div class="ad">
         <div class="cardBox">
-          <button class="prev">
-            <i class="arrowIc"></i>
-          </button>
-          <ul class="mutltiple-itme sportcard">
-            <li class="sportType plzLogIn">
+          <ul class="mutltiple-itme plzLogIn">
+            <li class="sportType">
               <div class="betBlock">
                 <p class="type">足球</p>
                 <div class="counter" data-target="95"></div>
@@ -88,7 +85,7 @@
               </div>
               <div class="shadow sh1"></div>
             </li>
-            <li class="sportType  plzLogIn">
+            <li class="sportType">
               <div class="betBlock">
                 <p class="type">籃球</p>
                 <div class="counter" data-target="54"></div>
@@ -106,7 +103,7 @@
               </div>
               <div class="shadow sh2"></div>
             </li>
-            <li class="sportType plzLogIn">
+            <li class="sportType">
               <div class="betBlock">
                 <p class="type">電競</p>
                 <div class="counter" data-target="6"></div>
@@ -124,7 +121,7 @@
               </div>
               <div class="shadow sh3"></div>
             </li>
-            <li class="sportType plzLogIn">
+            <li class="sportType">
               <div class="betBlock">
                 <p class="type">網球</p>
                 <div class="counter" data-target="34"></div>
@@ -142,10 +139,10 @@
               </div>
               <div class="shadow sh4"></div>
             </li>
-            <li class="sportType plzLogIn">
+            <li class="sportType">
               <div class="betBlock">
                 <p class="type">斯諾克</p>
-                <div class="counter"  data-target="9"></div>
+                <p class="counter">9</p>
                 <p class="announce">-可投注項-</p>
               </div>
               <div class="sportCard snooker">
@@ -159,11 +156,44 @@
               </div>
               </div>
               <div class="shadow sh5"></div>
-            </li>         
+            </li>
+            <li class="sportType">
+              <div class="betBlock">
+                <p class="type">斯諾克</p>
+                <p class="counter" data-target="9"></p>
+                <p class="announce">-可投注項-</p>
+              </div>
+              <div class="sportCard snooker">
+                <i class="athlete"></i>
+              <div class="gameInfo">
+                <div class="textLine">
+                  <span>2020-02-06&nbsp;|&nbsp;03:45</span>
+                  <span>义大利甲组联赛</span>
+                </div>
+                <p class="competition">拉素[主] VS 维罗纳</p>
+              </div>
+              </div>
+              <div class="shadow sh5"></div>
+            </li>
+            <li class="sportType">
+              <div class="betBlock">
+                <p class="type">斯諾克</p>
+                <p class="counter">9</p>
+                <p class="announce">-可投注項-</p>
+              </div>
+              <div class="sportCard snooker">
+                <i class="athlete"></i>
+              <div class="gameInfo">
+                <div class="textLine">
+                  <span>2020-02-06&nbsp;|&nbsp;03:45</span>
+                  <span>义大利甲组联赛</span>
+                </div>
+                <p class="competition">拉素[主] VS 维罗纳</p>
+              </div>
+              </div>
+              <div class="shadow sh5"></div>
+            </li>
           </ul>
-          <button class="next">
-            <i class="arrowIc right"></i>
-          </button>
         </div>
       </div>
       <div class="center">
@@ -203,6 +233,9 @@
               <!-- 左側 -->
               <div class="leftArea">
                 <div class="gameBlock big">
+                  <i class="lTriangle"></i>
+                  <i class="rTriangle"></i>
+                  <i class="shine"></i>
                   <!-- 儀錶板 -->
                   <div class="dashBoard">
                     <div class="circle03">
@@ -243,6 +276,9 @@
               <!-- 右側 -->
               <div class="rightArea">
                 <div class="gameBlock">
+                  <i class="lTriangle"></i>
+                  <i class="rTriangle"></i>
+                  <i class="shine"></i>
                   <!-- 儀錶板 -->
                   <div class="dashBoard">
                     <div class="circle03">
@@ -261,7 +297,7 @@
                   </div>
                   <!-- 賽事細項 -->
                   <div class="gameDetail">
-                    <div class="team">
+                    <div class="team t1">
                       <i class="teamLogo"></i>
                       <p class="teamName">拉素<span>[主]</span></p>
                     </div>
@@ -273,13 +309,16 @@
                       <p class="main">VS</p>
                       <p class="info">义大利甲组联赛</p>
                     </div>
-                    <div class="team">
+                    <div class="team t2">
                       <i class="teamLogo second"></i>
                       <p class="teamName">维罗纳</p>
                     </div>
                   </div>
                 </div>
                 <div class="gameBlock">
+                  <i class="lTriangle"></i>
+                  <i class="rTriangle"></i>
+                  <i class="shine"></i>
                   <!-- 儀錶板 -->
                   <div class="dashBoard">
                     <div class="circle03">
@@ -298,7 +337,7 @@
                   </div>
                   <!-- 賽事細項 -->
                   <div class="gameDetail">
-                    <div class="team">
+                    <div class="team t1">
                       <i class="teamLogo"></i>
                       <p class="teamName">拉素<span>[主]</span></p>
                     </div>
@@ -310,13 +349,16 @@
                       <p class="main">VS</p>
                       <p class="info">义大利甲组联赛</p>
                     </div>
-                    <div class="team">
+                    <div class="team t2">
                       <i class="teamLogo second"></i>
                       <p class="teamName">维罗纳</p>
                     </div>
                   </div>
                 </div>
                 <div class="gameBlock">
+                  <i class="lTriangle"></i>
+                  <i class="rTriangle"></i>
+                  <i class="shine"></i>
                   <!-- 儀錶板 -->
                   <div class="dashBoard">
                     <div class="circle03">
@@ -335,7 +377,7 @@
                   </div>
                   <!-- 賽事細項 -->
                   <div class="gameDetail">
-                    <div class="team">
+                    <div class="team t1">
                       <i class="teamLogo"></i>
                       <p class="teamName">拉素<span>[主]</span></p>
                     </div>
@@ -347,13 +389,16 @@
                       <p class="main">VS</p>
                       <p class="info">义大利甲组联赛</p>
                     </div>
-                    <div class="team">
+                    <div class="team t2">
                       <i class="teamLogo second"></i>
                       <p class="teamName">维罗纳</p>
                     </div>
                   </div>
                 </div>
                 <div class="gameBlock">
+                  <i class="lTriangle"></i>
+                  <i class="rTriangle"></i>
+                  <i class="shine"></i>
                   <!-- 儀錶板 -->
                   <div class="dashBoard">
                       <div class="circle03">
@@ -372,7 +417,7 @@
                   </div>
                   <!-- 賽事細項 -->
                   <div class="gameDetail">
-                    <div class="team">
+                    <div class="team t1">
                       <i class="teamLogo"></i>
                       <p class="teamName">拉素<span>[主]</span></p>
                     </div>
@@ -384,7 +429,7 @@
                       <p class="main">VS</p>
                       <p class="info">义大利甲组联赛</p>
                     </div>
-                    <div class="team">
+                    <div class="team t2">
                       <i class="teamLogo second"></i>
                       <p class="teamName">维罗纳</p>
                     </div>

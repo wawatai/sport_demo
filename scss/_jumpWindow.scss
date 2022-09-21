@@ -209,7 +209,6 @@
             display: none;
             width: 267px;
             height: 167px;
-            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -240,9 +239,14 @@
 
         //公告
         &.notice {
+            display: none;
             width: 500px;
             height: auto;
             border: 1px solid $jumpWindow_outBorder;
+
+            &.display {
+                display: block;
+            }
 
             .title {
                 background: $jumpWindow_noticeBG;
@@ -288,6 +292,10 @@
             width: 678px;
             height: 478px;
             border: 1px solid $jumpWindow_outBorder;
+
+            &.display {
+                display: block;
+            }
 
             .title {
                 background: $jumpWindow_noticeBG;

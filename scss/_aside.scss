@@ -41,6 +41,20 @@ aside {
                     background-position-x: 103%;
                 }
             }
+
+            &:hover,&:active,&.active {
+                background: $asideBtn_HOV_BG;
+                &.cs {
+                    border-radius: 20px 0 0 0;
+                }
+                &.app {
+                    border-radius: 0 0 0 20px;
+                }
+
+                i {
+                    filter: drop-shadow(5px -5px 5px rgba(255, 255, 255, 0.4));
+                }
+            }
         }
     }
 }

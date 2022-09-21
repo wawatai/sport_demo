@@ -1,3 +1,15 @@
+//ad
+$(function(){
+    $('.mutltiple-itme').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        centerMode: true,
+        centerPadding: '0px',
+        });
+})
+
 //可投注項
 $(function(){
     const counters = document.querySelectorAll('.counter');
@@ -59,17 +71,4 @@ $(function(){
         $('.showMore').addClass('display');
         $('.notice').removeClass('display');
     })
-})
-
-//ad
-$(function(){
-    $(document).ready(function(){
-        $('.mutltiple-itme').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false,
-        centerMode: true,
-        });
-      });
 })

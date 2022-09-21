@@ -37,7 +37,7 @@ $announce_font: #fff799;
 $sportCardInfoBg: #000000b4;
 $sportCardInfo_font: #ffffff;
 $betBlock_font_Big: #ffffff;
-$betBlock_font_textShadow: #ffffffb7;
+$textShadow_light: #ffffffb7;
 $sideBtn_Bg: #ffffffb7;
 $sideBtn_font: #7f97acd1;
 
@@ -67,7 +67,214 @@ $team_span: #5f7892;
     flex-direction: row;
     padding: 1.5%;
     box-sizing: border-box;
+    background: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
     position: relative;
+      
+      .lTriangle {
+        width: 49px;
+        height: 94px;
+        background: linear-gradient(to bottom, #d5d5d5 0%, #ffffff 57%);
+        transform: rotate(45deg);
+        position: absolute;
+        top: -36px;
+        left: -10px;
+        z-index: 5;
+      }
+
+      .rTriangle {
+        width: 49px;
+        height: 94px;
+        background: linear-gradient(to bottom, #d5d5d5 0%, #ffffff 57%);
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: -36px;
+        right: -10px;
+        z-index: 5;
+      }
+
+      &::before {
+        content: "";
+        width: 13px;
+        height: 13px;
+        background: linear-gradient(to top, #bababa 0%, #e7e7e7 50%, #f2f2f2 100%);
+        border-radius: 10px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+      }
+
+      &::after {
+        content: "";
+        width: 13px;
+        height: 13px;
+        background: linear-gradient(to top, #bababa 0%, #e7e7e7 50%, #f2f2f2 100%);
+        border-radius: 10px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 10;
+      }
+    
+      .shine {
+        width: 186px;
+        height: 469px;
+        background: #ffffff;
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: -139px;
+        left: 155px;
+      }
+
+      .shine2 {
+        width: 186px;
+        height: 469px;
+        background: #ffffff;
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: -139px;
+        left: -500px;
+      }
+
+      &.login {
+        &:hover,&:active,&.active {
+          .shine {
+            animation: shine1 1s ease-in-out forwards;
+
+            @keyframes shine1 {
+              0% {
+                left: 155px;
+              }
+              100%{
+                left: 900px;
+              }
+            }
+          }
+          .shine2 {
+            animation: shine2 2s ease-in-out forwards;
+
+            @keyframes shine2 {
+              0% {
+                left: -500px;
+              }
+              100%{
+                left: 1000px;
+              }
+            }
+          }
+        }
+      }
+}
+@mixin gameBlockS {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    box-sizing: border-box;
+    background: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+      
+      .lTriangle {
+        width: 49px;
+        height: 94px;
+        background: linear-gradient(to bottom, #d5d5d5 0%, #ffffff 57%);
+        transform: rotate(45deg);
+        position: absolute;
+        top: -32px;
+        left: -34px;
+        z-index: 5;
+      }
+
+      .rTriangle {
+        width: 49px;
+        height: 94px;
+        background: linear-gradient(to bottom, #d5d5d5 0%, #ffffff 57%);
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: -49px;
+        right: -18px;
+        z-index: 5;
+      }
+
+      &::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: linear-gradient(to top, #bababa 0%, #e7e7e7 50%, #f2f2f2 100%);
+        border-radius: 10px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        z-index: 10;
+      }
+
+      &::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: linear-gradient(to top, #bababa 0%, #e7e7e7 50%, #f2f2f2 100%);
+        border-radius: 10px;
+        position: absolute;
+        bottom:8px;
+        right: 8px;
+        z-index: 10;
+      }
+    
+      .shine {
+        width: 105px;
+        height: 469px;
+        background: #ffffff;
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: -139px;
+        left: 155px;
+      }
+      .shine2 {
+        width: 105px;
+        height: 469px;
+        background: #ffffff;
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: -139px;
+        left: -100px;
+        opacity: 1;
+      }
+
+      &.login {
+        &:hover,&:active,&.active {
+          .shine {
+            animation: shine1 2s ease-in-out forwards;
+
+            @keyframes shine1 {
+              0% {
+                opacity: 0;
+                left: 155px;
+              }
+              100%{
+                left: 900px;
+              }
+            }
+          }
+          .shine2 {
+            animation: shine2 2s ease-in-out forwards;
+
+            @keyframes shine2 {
+              0% {
+                opacity: 1;
+                left: -100px;
+              }
+              100%{
+                opacity: 1;
+                left: 155px;
+              }
+            }
+          }
+        }
+      }
 }
 
 //儀表板(大)
@@ -166,8 +373,8 @@ $team_span: #5f7892;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 11px;
-        left: 19px;
+        top: 0px;
+        left: 14px;
 
         .circle02 {
           width: 100%;
@@ -232,6 +439,7 @@ $team_span: #5f7892;
 
 //懸浮按鈕
 $asideBtn_BG: linear-gradient(to right, #ff4646 0%, #a3003d 100%);
+$asideBtn_HOV_BG: linear-gradient(to left, #ff4646 0%, #a3003d 100%);
 $aside_Border: #fa4246;
 
 //footer
