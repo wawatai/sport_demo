@@ -71,4 +71,10 @@ $(function(){
         $('.showMore').addClass('display');
         $('.notice').removeClass('display');
     })
+
+    //back
+    $('.showMore .back').on("click",function(){
+        $('.notice').addClass('display');
+        $('.showMore').removeClass('display');
+    })
 })
