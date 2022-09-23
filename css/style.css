@@ -807,6 +807,8 @@ html body .ad .cardBox .mutltiple-itme .slick-arrow {
   z-index: 1;
   width: 52px;
   height: 52px;
+  -webkit-box-shadow: -1px -2px 8px rgba(69, 69, 69, 0.3);
+          box-shadow: -1px -2px 8px rgba(69, 69, 69, 0.3);
 }
 html body .ad .cardBox .mutltiple-itme .slick-arrow:hover, html body .ad .cardBox .mutltiple-itme .slick-arrow:active, html body .ad .cardBox .mutltiple-itme .slick-arrow.active {
   opacity: 1;
