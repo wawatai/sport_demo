@@ -12,6 +12,7 @@ header {
 
     .mainArea {
       width: auto;
+      min-width: 565px;
       height: 100%;
       display: flex;
       flex-direction: row;
@@ -65,6 +66,10 @@ header {
             }
           }
         }
+      }
+
+      &.login {
+      min-width: 859px;
       }
     }
 
@@ -175,6 +180,10 @@ header {
           background: none;
           color: $header_font2;
           border-left: 1px solid $logArea_border;
+
+             &:hover,&:active,&.active {
+            text-shadow: 0px 0px 8px rgba(255, 255, 255, 30%);
+          }
         }
       }
 
@@ -217,6 +226,9 @@ header {
             top: -3px;
             right: -7px;
           }
+           &:hover,&:active,&.active {
+              filter: drop-shadow(1px 0px 10px rgba(255, 255, 255, 30%));
+            }
         }
 
         &.member {

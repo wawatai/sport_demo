@@ -5,6 +5,7 @@
 
   .cardBox {
     max-width: 1200px;
+    min-width: 1196px;
     height: auto;
     padding: 85px 0 0;
     display: flex;
@@ -191,7 +192,7 @@
           &.active {
             .athlete {
               filter: drop-shadow(5px -5px 5px rgba(0, 0, 0, 0.4));
-              transition: 0.5s;
+              transition: 0.1s;
             }
             .gameInfo {
               height: 70px;

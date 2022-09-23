@@ -19,6 +19,9 @@ $message_remind: #ff002b;
     border-radius: 3px;
     border: 1px solid #c80008;
 
+  &:hover,&:active,&.active {
+    background: linear-gradient(to left, #ff3f3f 0%, #e70057 100%);
+  }
 }
 //註冊
 @mixin signupBtn {
@@ -29,7 +32,9 @@ $message_remind: #ff002b;
     font-weight: bold;
     border-radius: 3px;
     border: 1px solid #296396;
-
+  &:hover,&:active,&.active {
+    background: linear-gradient(to left, #9ab4c9 0%, #527799 100%);
+  }
 }
 
 //ad
@@ -491,6 +496,11 @@ $jumpWindow_delete_Btn: #d22442;
     align-items: center;
     justify-content: center;
     margin: 0 8px 0 0;
+
+     &:hover,&:active,&.active {
+        filter: brightness(1.1);
+        box-shadow: 0px 0px 5px rgb(18 9 16 / 20%);
+     }
 }
 
 @mixin jumpWindowSignUpBtn {
@@ -503,4 +513,10 @@ $jumpWindow_delete_Btn: #d22442;
     align-items: center;
     justify-content: center;
     background:  linear-gradient(to right, #ff3f3f 0%, #e70057 100%);
+
+    &:hover,&:active,&.active {
+     background: linear-gradient(to left, #ff3f3f 0%, #e70057 100%);
+      filter: brightness(1.1);
+      box-shadow: 0px 0px 5px rgb(18 9 16 / 20%);
+     }
 }

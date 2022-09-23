@@ -301,6 +301,7 @@ html body header .center {
 }
 html body header .center .mainArea {
   width: auto;
+  min-width: 565px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,6 +354,9 @@ html body header .center .mainArea nav ul li:hover::before, html body header .ce
 }
 html body header .center .mainArea nav ul li:hover a, html body header .center .mainArea nav ul li:active a, html body header .center .mainArea nav ul li.active a {
   color: #ffffff;
+}
+html body header .center .mainArea.login {
+  min-width: 859px;
 }
 html body header .center .unlogArea {
   width: auto;
@@ -439,6 +443,10 @@ html body header .center .unlogArea .btnBox .signIN {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+html body header .center .unlogArea .btnBox .signIN:hover, html body header .center .unlogArea .btnBox .signIN:active, html body header .center .unlogArea .btnBox .signIN.active {
+  background: -webkit-gradient(linear, right top, left top, from(#ff3f3f), to(#e70057));
+  background: linear-gradient(to left, #ff3f3f 0%, #e70057 100%);
+}
 html body header .center .unlogArea .btnBox .signUp {
   background: -webkit-gradient(linear, left top, right top, from(#9ab4c9), to(#527799));
   background: linear-gradient(to right, #9ab4c9 0%, #527799 100%);
@@ -453,6 +461,10 @@ html body header .center .unlogArea .btnBox .signUp {
   position: absolute;
   bottom: -31px;
   right: 0;
+}
+html body header .center .unlogArea .btnBox .signUp:hover, html body header .center .unlogArea .btnBox .signUp:active, html body header .center .unlogArea .btnBox .signUp.active {
+  background: -webkit-gradient(linear, right top, left top, from(#9ab4c9), to(#527799));
+  background: linear-gradient(to left, #9ab4c9 0%, #527799 100%);
 }
 html body header .center .logInArea {
   width: auto;
@@ -490,6 +502,9 @@ html body header .center .logInArea .topLine .logout {
   background: none;
   color: #ffffff;
   border-left: 1px solid #363636;
+}
+html body header .center .logInArea .topLine .logout:hover, html body header .center .logInArea .topLine .logout:active, html body header .center .logInArea .topLine .logout.active {
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
 }
 html body header .center .logInArea .bottom {
   width: 100%;
@@ -531,6 +546,10 @@ html body header .center .logInArea .logInLine.message::before {
   top: -3px;
   right: -7px;
 }
+html body header .center .logInArea .logInLine.message:hover, html body header .center .logInArea .logInLine.message:active, html body header .center .logInArea .logInLine.message.active {
+  -webkit-filter: drop-shadow(1px 0px 10px rgba(255, 255, 255, 0.3));
+          filter: drop-shadow(1px 0px 10px rgba(255, 255, 255, 0.3));
+}
 html body header .center .logInArea .logInLine.member {
   background-position-x: 50%;
 }
@@ -553,6 +572,7 @@ html body .ad {
 }
 html body .ad .cardBox {
   max-width: 1200px;
+  min-width: 1196px;
   height: auto;
   padding: 85px 0 0;
   display: -webkit-box;
@@ -766,8 +786,8 @@ html body .ad .cardBox .mutltiple-itme li.login {
 html body .ad .cardBox .mutltiple-itme li.login:hover .athlete, html body .ad .cardBox .mutltiple-itme li.login:active .athlete, html body .ad .cardBox .mutltiple-itme li.login.active .athlete {
   -webkit-filter: drop-shadow(5px -5px 5px rgba(0, 0, 0, 0.4));
           filter: drop-shadow(5px -5px 5px rgba(0, 0, 0, 0.4));
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 html body .ad .cardBox .mutltiple-itme li.login:hover .gameInfo, html body .ad .cardBox .mutltiple-itme li.login:active .gameInfo, html body .ad .cardBox .mutltiple-itme li.login.active .gameInfo {
   height: 70px;
@@ -2069,6 +2089,12 @@ html body .filter .jumpWindow.unLogIn .content .bottom button {
           justify-content: center;
   margin: 0 8px 0 0;
 }
+html body .filter .jumpWindow.unLogIn .content .bottom button:hover, html body .filter .jumpWindow.unLogIn .content .bottom button:active, html body .filter .jumpWindow.unLogIn .content .bottom button.active {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0px 0px 5px rgba(18, 9, 16, 0.2);
+          box-shadow: 0px 0px 5px rgba(18, 9, 16, 0.2);
+}
 html body .filter .jumpWindow.unLogIn .content .bottom button.signUp {
   background: #69839a;
 }
@@ -2209,6 +2235,14 @@ html body .filter .jumpWindow.signUP .content .downArea button {
   background: linear-gradient(to right, #ff3f3f 0%, #e70057 100%);
   margin: auto;
 }
+html body .filter .jumpWindow.signUP .content .downArea button:hover, html body .filter .jumpWindow.signUP .content .downArea button:active, html body .filter .jumpWindow.signUP .content .downArea button.active {
+  background: -webkit-gradient(linear, right top, left top, from(#ff3f3f), to(#e70057));
+  background: linear-gradient(to left, #ff3f3f 0%, #e70057 100%);
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0px 0px 5px rgba(18, 9, 16, 0.2);
+          box-shadow: 0px 0px 5px rgba(18, 9, 16, 0.2);
+}
 html body .filter .jumpWindow.applySuccess {
   display: none;
   width: 267px;
@@ -2259,6 +2293,14 @@ html body .filter .jumpWindow.applySuccess .goDeposit {
   width: 120px;
   height: 35px;
   font-size: 14px;
+}
+html body .filter .jumpWindow.applySuccess .goDeposit:hover, html body .filter .jumpWindow.applySuccess .goDeposit:active, html body .filter .jumpWindow.applySuccess .goDeposit.active {
+  background: -webkit-gradient(linear, right top, left top, from(#ff3f3f), to(#e70057));
+  background: linear-gradient(to left, #ff3f3f 0%, #e70057 100%);
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0px 0px 5px rgba(18, 9, 16, 0.2);
+          box-shadow: 0px 0px 5px rgba(18, 9, 16, 0.2);
 }
 html body .filter .jumpWindow.notice {
   display: none;
@@ -2322,6 +2364,12 @@ html body .filter .jumpWindow.notice .content .bottom button {
           justify-content: center;
   margin: 0 8px 0 0;
   background: #69839a;
+}
+html body .filter .jumpWindow.notice .content .bottom button:hover, html body .filter .jumpWindow.notice .content .bottom button:active, html body .filter .jumpWindow.notice .content .bottom button.active {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0px 0px 5px rgba(18, 9, 16, 0.2);
+          box-shadow: 0px 0px 5px rgba(18, 9, 16, 0.2);
 }
 html body .filter .jumpWindow.showMore {
   display: none;
