@@ -546,10 +546,6 @@ html body header .center .logInArea .logInLine.message::before {
   top: -3px;
   right: -7px;
 }
-html body header .center .logInArea .logInLine.message:hover, html body header .center .logInArea .logInLine.message:active, html body header .center .logInArea .logInLine.message.active {
-  -webkit-filter: drop-shadow(1px 0px 10px rgba(255, 255, 255, 0.3));
-          filter: drop-shadow(1px 0px 10px rgba(255, 255, 255, 0.3));
-}
 html body header .center .logInArea .logInLine.member {
   background-position-x: 50%;
 }
