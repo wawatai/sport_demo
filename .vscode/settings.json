@@ -7,5 +7,6 @@
         "unlog",
         "unlogin",
         "Wcontent"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

@@ -1869,7 +1869,7 @@ html body .mainWrap .bottom .gameWrap p.info {
     opacity: 0;
   }
   100% {
-    opacity: 100;
+    opacity: 0;
   }
 }
 @keyframes visible {
@@ -1877,7 +1877,7 @@ html body .mainWrap .bottom .gameWrap p.info {
     opacity: 0;
   }
   100% {
-    opacity: 100;
+    opacity: 0;
   }
 }
 html body aside .rightBtn {
