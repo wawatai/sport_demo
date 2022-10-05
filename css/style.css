@@ -605,8 +605,8 @@ html body .ad .cardBox button .arrowIc {
 html body .ad .cardBox button .arrowIc.right {
   background-position-x: 100%;
 }
-html body .ad .cardBox .mutltiple-itme {
-  width: 100%;
+html body .ad .cardBox .mutltiple-item {
+  width: 1200px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -618,7 +618,7 @@ html body .ad .cardBox .mutltiple-itme {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body .ad .cardBox .mutltiple-itme li {
+html body .ad .cardBox .mutltiple-item li {
   width: auto;
   height: 321px;
   display: -webkit-box;
@@ -634,7 +634,7 @@ html body .ad .cardBox .mutltiple-itme li {
           justify-content: flex-end;
   position: relative;
 }
-html body .ad .cardBox .mutltiple-itme li .betBlock {
+html body .ad .cardBox .mutltiple-item li .betBlock {
   width: 96px;
   height: 101px;
   color: #ffffff;
@@ -651,29 +651,29 @@ html body .ad .cardBox .mutltiple-itme li .betBlock {
   top: -1px;
   right: -6px;
 }
-html body .ad .cardBox .mutltiple-itme li .betBlock .type {
+html body .ad .cardBox .mutltiple-item li .betBlock .type {
   font-size: 24px;
   font-weight: bold;
   margin: 0 0 10px;
 }
-html body .ad .cardBox .mutltiple-itme li .betBlock .counter {
+html body .ad .cardBox .mutltiple-item li .betBlock .counter {
   font-size: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7176470588);
   margin: 0 0 10px;
 }
-html body .ad .cardBox .mutltiple-itme li .betBlock .announce {
+html body .ad .cardBox .mutltiple-item li .betBlock .announce {
   color: #fff799;
   font-size: 12px;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard {
+html body .ad .cardBox .mutltiple-item li .sportCard {
   width: 100%;
   height: 155px;
   border: 1px solid #ffffff;
   border-radius: 10px;
   position: relative;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard .athlete {
+html body .ad .cardBox .mutltiple-item li .sportCard .athlete {
   width: 216px;
   height: 231px;
   border-radius: inherit;
@@ -703,7 +703,7 @@ html body .ad .cardBox .mutltiple-itme li .sportCard .athlete {
     left: 0;
   }
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard .gameInfo {
+html body .ad .cardBox .mutltiple-item li .sportCard .gameInfo {
   width: 100%;
   height: 40px;
   background: rgba(0, 0, 0, 0.7058823529);
@@ -725,7 +725,7 @@ html body .ad .cardBox .mutltiple-itme li .sportCard .gameInfo {
   left: 0;
   z-index: 2;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard .gameInfo .textLine {
+html body .ad .cardBox .mutltiple-item li .sportCard .gameInfo .textLine {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -736,59 +736,59 @@ html body .ad .cardBox .mutltiple-itme li .sportCard .gameInfo .textLine {
           justify-content: space-between;
   margin: 0 0 10px;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard .gameInfo .textLine span {
+html body .ad .cardBox .mutltiple-item li .sportCard .gameInfo .textLine span {
   display: none;
   white-space: nowrap;
   font-size: 11px;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard.football {
+html body .ad .cardBox .mutltiple-item li .sportCard.football {
   background-position-x: 0%;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard.football .athlete {
+html body .ad .cardBox .mutltiple-item li .sportCard.football .athlete {
   background-position-x: 0%;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard.basketball {
+html body .ad .cardBox .mutltiple-item li .sportCard.basketball {
   background-position-x: 25%;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard.basketball .athlete {
+html body .ad .cardBox .mutltiple-item li .sportCard.basketball .athlete {
   width: 219px;
   background-position-x: 25%;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard.gaming {
+html body .ad .cardBox .mutltiple-item li .sportCard.gaming {
   background-position-x: 50.2%;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard.gaming .athlete {
+html body .ad .cardBox .mutltiple-item li .sportCard.gaming .athlete {
   background-position-x: 50.5%;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard.tennis {
+html body .ad .cardBox .mutltiple-item li .sportCard.tennis {
   background-position-x: 75.1%;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard.tennis .athlete {
+html body .ad .cardBox .mutltiple-item li .sportCard.tennis .athlete {
   background-position-x: 75%;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard.snooker {
+html body .ad .cardBox .mutltiple-item li .sportCard.snooker {
   background-position-x: 100%;
 }
-html body .ad .cardBox .mutltiple-itme li .sportCard.snooker .athlete {
+html body .ad .cardBox .mutltiple-item li .sportCard.snooker .athlete {
   background-position-x: 100.5%;
 }
-html body .ad .cardBox .mutltiple-itme li .shadow {
+html body .ad .cardBox .mutltiple-item li .shadow {
   width: 235px;
   height: 39px;
 }
-html body .ad .cardBox .mutltiple-itme li.login {
+html body .ad .cardBox .mutltiple-item li.login {
   cursor: pointer;
 }
-html body .ad .cardBox .mutltiple-itme li.login:hover .athlete, html body .ad .cardBox .mutltiple-itme li.login:active .athlete, html body .ad .cardBox .mutltiple-itme li.login.active .athlete {
+html body .ad .cardBox .mutltiple-item li.login:hover .athlete, html body .ad .cardBox .mutltiple-item li.login:active .athlete, html body .ad .cardBox .mutltiple-item li.login.active .athlete {
   -webkit-filter: drop-shadow(5px -5px 5px rgba(0, 0, 0, 0.4));
           filter: drop-shadow(5px -5px 5px rgba(0, 0, 0, 0.4));
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
-html body .ad .cardBox .mutltiple-itme li.login:hover .gameInfo, html body .ad .cardBox .mutltiple-itme li.login:active .gameInfo, html body .ad .cardBox .mutltiple-itme li.login.active .gameInfo {
+html body .ad .cardBox .mutltiple-item li.login:hover .gameInfo, html body .ad .cardBox .mutltiple-item li.login:active .gameInfo, html body .ad .cardBox .mutltiple-item li.login.active .gameInfo {
   height: 70px;
 }
-html body .ad .cardBox .mutltiple-itme li.login:hover .gameInfo .textLine span, html body .ad .cardBox .mutltiple-itme li.login:active .gameInfo .textLine span, html body .ad .cardBox .mutltiple-itme li.login.active .gameInfo .textLine span {
+html body .ad .cardBox .mutltiple-item li.login:hover .gameInfo .textLine span, html body .ad .cardBox .mutltiple-item li.login:active .gameInfo .textLine span, html body .ad .cardBox .mutltiple-item li.login.active .gameInfo .textLine span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -796,27 +796,27 @@ html body .ad .cardBox .mutltiple-itme li.login:hover .gameInfo .textLine span, 
   -webkit-transition: 3s ease-out;
   transition: 3s ease-out;
 }
-html body .ad .cardBox .mutltiple-itme li.login:hover .gameInfo .textLine p, html body .ad .cardBox .mutltiple-itme li.login:active .gameInfo .textLine p, html body .ad .cardBox .mutltiple-itme li.login.active .gameInfo .textLine p {
+html body .ad .cardBox .mutltiple-item li.login:hover .gameInfo .textLine p, html body .ad .cardBox .mutltiple-item li.login:active .gameInfo .textLine p, html body .ad .cardBox .mutltiple-item li.login.active .gameInfo .textLine p {
   text-shadow: rgba(255, 255, 255, 0.7176470588);
 }
-html body .ad .cardBox .mutltiple-itme .slick-arrow {
+html body .ad .cardBox .mutltiple-item .slick-arrow {
   z-index: 1;
   width: 52px;
   height: 52px;
   -webkit-box-shadow: -1px -2px 8px rgba(69, 69, 69, 0.3);
           box-shadow: -1px -2px 8px rgba(69, 69, 69, 0.3);
 }
-html body .ad .cardBox .mutltiple-itme .slick-arrow:hover, html body .ad .cardBox .mutltiple-itme .slick-arrow:active, html body .ad .cardBox .mutltiple-itme .slick-arrow.active {
+html body .ad .cardBox .mutltiple-item .slick-arrow:hover, html body .ad .cardBox .mutltiple-item .slick-arrow:active, html body .ad .cardBox .mutltiple-item .slick-arrow.active {
   opacity: 1;
 }
-html body .ad .cardBox .mutltiple-itme .slick-arrow::before {
+html body .ad .cardBox .mutltiple-item .slick-arrow::before {
   display: none;
 }
-html body .ad .cardBox .mutltiple-itme .slick-arrow.slick-prev {
+html body .ad .cardBox .mutltiple-item .slick-arrow.slick-prev {
   top: 65%;
   left: -55px;
 }
-html body .ad .cardBox .mutltiple-itme .slick-arrow.slick-prev::after {
+html body .ad .cardBox .mutltiple-item .slick-arrow.slick-prev::after {
   content: "";
   width: 16px;
   height: 25px;
@@ -824,13 +824,13 @@ html body .ad .cardBox .mutltiple-itme .slick-arrow.slick-prev::after {
   top: 29%;
   left: 30%;
 }
-html body .ad .cardBox .mutltiple-itme .slick-arrow.slick-next {
+html body .ad .cardBox .mutltiple-item .slick-arrow.slick-next {
   top: 57%;
   right: -55px;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
-html body .ad .cardBox .mutltiple-itme .slick-arrow.slick-next::after {
+html body .ad .cardBox .mutltiple-item .slick-arrow.slick-next::after {
   content: "";
   width: 16px;
   height: 25px;
@@ -997,9 +997,8 @@ html body .mainWrap .bottom .human .soccerBall {
   position: absolute;
   bottom: 1px;
   left: 38%;
-  opacity: 0;
-  -webkit-animation: fadeIn 0.2s 4.3s ease-in-out forwards;
-          animation: fadeIn 0.2s 4.3s ease-in-out forwards;
+  -webkit-animation: visible 4.3s ease-in-out, fadeIn 0.2s 4.3s ease-in-out forwards;
+          animation: visible 4.3s ease-in-out, fadeIn 0.2s 4.3s ease-in-out forwards;
 }
 @-webkit-keyframes fadeIn {
   0% {
@@ -1023,9 +1022,8 @@ html body .mainWrap .bottom .human .group1 {
   position: absolute;
   bottom: 10px;
   left: 0%;
-  opacity: 0;
-  -webkit-animation: gp1 1.5s 3s ease-in-out forwards;
-          animation: gp1 1.5s 3s ease-in-out forwards;
+  -webkit-animation: visible 3s ease-in-out, gp1 1.5s 3s ease-in-out forwards;
+          animation: visible 3s ease-in-out, gp1 1.5s 3s ease-in-out forwards;
 }
 @-webkit-keyframes gp1 {
   0% {
@@ -1093,9 +1091,8 @@ html body .mainWrap .bottom .human .group2 {
   position: absolute;
   bottom: 10px;
   left: 20%;
-  opacity: 0;
-  -webkit-animation: gp2 1s 4s ease-in forwards;
-          animation: gp2 1s 4s ease-in forwards;
+  -webkit-animation: visible 4.3s ease-in-out, gp2 1s 4s ease-in forwards;
+          animation: visible 4.3s ease-in-out, gp2 1s 4s ease-in forwards;
 }
 @-webkit-keyframes gp2 {
   0% {
@@ -1131,9 +1128,8 @@ html body .mainWrap .bottom .human .group3 {
   position: absolute;
   bottom: 10px;
   right: 0;
-  opacity: 0;
-  -webkit-animation: gp3 0.2s 4.5s ease-OUT forwards;
-          animation: gp3 0.2s 4.5s ease-OUT forwards;
+  -webkit-animation: visible 4.3s ease-in-out, gp3 0.2s 4.5s ease-OUT forwards;
+          animation: visible 4.3s ease-in-out, gp3 0.2s 4.5s ease-OUT forwards;
 }
 @-webkit-keyframes gp3 {
   0% {
@@ -1867,6 +1863,22 @@ html body .mainWrap .bottom .gameWrap p.num {
 html body .mainWrap .bottom .gameWrap p.info {
   font-size: 12px;
   white-space: nowrap;
+}
+@-webkit-keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 html body aside .rightBtn {
   width: 60px;

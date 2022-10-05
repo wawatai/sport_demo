@@ -141,8 +141,7 @@
         position: absolute;
         bottom: 1px;
         left: 38%;
-        opacity: 0;
-        animation: fadeIn 0.2s 4.3s ease-in-out forwards;
+        animation: visible 4.3s ease-in-out, fadeIn 0.2s 4.3s ease-in-out forwards;
         @keyframes fadeIn {
           0% {
             opacity: 0;
@@ -160,8 +159,7 @@
         position: absolute;
         bottom: 10px;
         left: 0%;
-        opacity: 0;
-        animation: gp1 1.5s 3s ease-in-out forwards;
+        animation: visible 3s ease-in-out, gp1 1.5s 3s ease-in-out forwards;
 
         @keyframes gp1 {
           0% {
@@ -201,8 +199,7 @@
         position: absolute;
         bottom: 10px;
         left: 20%;
-        opacity: 0;
-        animation: gp2 1s 4s ease-in forwards;
+        animation: visible 4.3s ease-in-out, gp2 1s 4s ease-in forwards;
 
         @keyframes gp2 {
           0% {
@@ -226,8 +223,7 @@
         position: absolute;
         bottom: 10px;
         right: 0;
-        opacity: 0;
-        animation: gp3 0.2s 4.5s ease-OUT forwards;
+        animation: visible 4.3s ease-in-out, gp3 0.2s 4.5s ease-OUT forwards;
 
         @keyframes gp3 {
           0% {
@@ -515,3 +511,11 @@
   }
 }
 
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
